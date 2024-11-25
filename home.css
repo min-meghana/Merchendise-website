@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	list-style: none;
+	text-decoration: none;
+}
+header{
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 9%;
+    margin-top: 7px;
+
+}
+.logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: silver*;
+}
+span{
+    color: gold;
+}
+.navlist{
+	display: flex;
+}
+.navlist a{
+	color: silver;
+	margin-left: 60px;
+	font-size: 15px;
+	font-weight: 600;
+	border-bottom: 2px solid transparent;
+	transition: all .55s ease;
+}
+.navlist a:hover{
+	border-bottom: 2px solid white;
+}
+.hero{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(245.59deg, #003153 0%, #001c3c 28.53%, #000326 75.52%);
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+section{
+	padding: 0 19%;
+}
+.hero-text h5{
+	font-size: 14px;
+	font-weight: 400;
+	color: silver;
+	margin-bottom: 40px;
+}
+.hero-text h1{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 90px;
+	line-height: 1;
+	color: silver;
+	margin: 0 0 45px;
+    color: goldenrod;
+}
+.hero-text h4{
+	font-size: 18px;
+	font-weight: 600;
+	color: silver;
+	margin-bottom: 10px;
+}
+.hero-text p{
+	color: silver;
+	font-size: 15px;
+	line-height: 1.9;
+	margin-bottom: 40px;
+}
+.hero-img img{
+	width: 350px;
+	height: auto;
+    margin-left: 50%;
+    margin-right: 20%;
+}
+.hero-text a{
+	display: inline-block;
+	color: silver;
+	background: gold;
+	border: 1px solid transparent;
+	padding: 12px 30px;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: all .55s ease;
+}
+.hero-text a:hover{
+	background: transparent;
+    color: gold;
+	border: 1px solid silver;
+	transform: translateX(8px);
+}
+.hero-text a.ctaa{
+	background: transparent;
+	border: 1px solid silver;
+	margin-left: 20px;
+}
+.hero-text a.ctaa i{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.icons{
+	position: absolute;
+    width: 10px;
+    height: auto;
+	top: 50%;
+	padding: 0 9%;
+    margin-left: 15px;
+	transform: translateY(-50%);
+  
+    
+}
+.icons i{
+	display: block;
+	margin: 26px 0;
+	font-size: 24px;
+	color: silver;
+	transition: all .50s ease;
+    
+}
+.icons i:hover{
+	color: gold;
+	transform: translateY(-5px);
+}
+/*.scroll-down i{
+	display: block;
+	padding: 12px;
+	font-size: 25px;
+	color: white;
+	background: #4d9559;
+	border-radius: 30px;
+	transition: all .50s ease;
+}
+.scroll-down i:hover{
+	transform: translateY(-5px);
+}*/

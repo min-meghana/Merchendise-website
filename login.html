@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript">
+        function validateForm()
+        {
+            var mail= document.signin.mail.value;
+            var ma= document.signin.pword.value;
+
+            if(mail==""|| mail=="null")
+            {
+                alert("Please enter your email");
+                document.signin.mail.focus();
+                return false;
+            }
+            var atpos=mail.indexOf("@");
+            var dotpos= mail.lastIndexOf(".");
+            if(atpos<1 || dotpos<atpos+2 || dotpos+2>=mail.lenth)
+            {
+                alert("Not a valid mail address");
+                return false;
+            }
+            if(ma==""|| ma=="null")
+            {
+                alert("Please enter your password");
+                document.signin.pass.focus();
+                return false;
+            }
+            if(ma.length<6)
+            {  
+                alert("Password must be at least 6 characters long.");  
+                return false;  
+            } 
+            window.open("Products.html");
+            alert("Login Succesfull");
+            return true;
+        }
+
+    </script>
+</head>
+<body>
+    <div class="box">
+        <form class="bbb" name="signin" onsubmit="return validateForm();">
+            <p id="pp">Sign Up</p><br>
+            <label >Email</label><br>
+            <input type="email" id="mail" name="mail" placeholder="abc@gmail.com"><br><br>
+            <label for="pword">Password</label><br>
+            <input type="password" id="pword" name="pword"><br>
+            
+            <label for="box"></label><br>
+            <input id="box" type="checkbox">Remember me?<br>
+            <label for="button"></label><br>
+            <input type="submit" id="button" name="submit"value="Sign Up">
+            <!--<p id="fp">Forgot Password?</p><br>!-->
+        </form>
+    </div>
+</body>
+</html>
